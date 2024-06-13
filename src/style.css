@@ -1,0 +1,16 @@
+@import "bootstrap";
+
+label {
+    margin: 20px 0;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+}
+img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
