@@ -33,10 +33,6 @@ const app = () => {
   input.addEventListener('input', async (e) => {
     e.preventDefault();
     list.replaceChildren([]);
-    if (e.target.value.trim().length === 0) {
-        list.replaceChildren([]);
-        return;
-    }
     const filteredUsers = staticUsers
     .filter((user) => user.name.toLowerCase().startsWith(e.target.value.toLowerCase()))
     .map(renderUsers)
